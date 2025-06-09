@@ -8,7 +8,7 @@
 
 .navbar {
   padding: 15px 0;
-  background-color: rgb(8, 172, 140);
+  background-color: rgba(61, 103, 78, 255);
 }
 
 .card {
@@ -24,17 +24,28 @@
 }
 
 * {
-  font-family: 'Poppins', sans-serif !important;
+
+  font-family: "Oswald", sans-serif;
+
 }
 
 .background-color {
-  background-color: rgb(8, 172, 140) !important;
+  background-color: rgba(61, 103, 78, 255) !important;
 }
 
 .btn:hover {
-  background-color: rgb(6, 140, 115) !important;
+  background-color: rgba(29, 52, 44, 255) !important;
 }
 
 .color {
-  color: rgb(8, 172, 140) !important;
+  color: rgba(61, 103, 78, 255) !important;
+}
+
+.bg {
+  background-image: url('C:\Users\casan\Desktop\Boolean\esercizi\boolroad_gruppo_5\src\assets\img-montagna.jpg');
+  background-size: cover;
+}
+
+.container {
+  padding: 0px !important;
 }
