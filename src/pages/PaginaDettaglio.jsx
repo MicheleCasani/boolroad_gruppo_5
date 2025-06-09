@@ -28,7 +28,10 @@ const PaginaDettaglio = () => {
     // Cerco sia nel nome che nel cognome, tutto in minuscolo per non avere problemi
     const filteredParticipant = trip.participants.filter(participant =>
         participant.name.toLowerCase().includes(search.toLowerCase()) ||
-        participant.cognome.toLowerCase().includes(search.toLowerCase())
+        participant.cognome.toLowerCase().includes(search.toLowerCase()) ||
+        participant.email.toLowerCase().includes(search.toLowerCase()) ||
+        participant.codiceFiscale.toLowerCase().includes(search.toLowerCase()) ||
+        participant.telefono.toLowerCase().includes(search.toLowerCase())
     );
 
     return (
