@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const PaginaViaggi = () => {
     return (
-        <div className="d-flex justify-content-center align-items-center vh-100">
+        <div className="d-flex justify-content-center align-items-center vh">
             <div className="iphone">
                 <div className="iphone-screen">
                     <div className="container bg text-center rounded-4 shadow">

@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom' // Per prendere l'id dall'URL
 import { Link } from 'react-router-dom' // Per tornare alla home
 
 const PaginaDettaglio = () => {
+
     // Stato per tenere traccia di quello che scrivo nella barra di ricerca
     const [search, setSearch] = useState('')
 
@@ -33,7 +34,7 @@ const PaginaDettaglio = () => {
     return (
         <>
             {/* Container principale centrato verticalmente e orizzontalmente */}
-            <div className="d-flex flex-column justify-content-center align-items-center vh-100">
+            <div className="d-flex flex-column justify-content-center align-items-center vh">
                 {/* Box principale con ombra e bordi arrotondati */}
                 <div className="container text-center rounded-4 shadow bg">
                     <Navbar />
@@ -80,8 +81,8 @@ const PaginaDettaglio = () => {
                                             data-bs-parent={`#accordionExample-${index}`}> {/* Collegato al suo accordion */}
                                             <div className="accordion-body text-start">
                                                 {/* Dettagli del partecipante */}
-                                                <div><strong>Telefono: </strong> {participant.telefono}</div>
-                                                <div><strong>Email: </strong> {participant.email}</div>
+                                                <div><strong>Telefono: </strong> <a href={`tel:${participant.telefono}`}>{participant.telefono}</a></div>
+                                                <div><strong>Email: </strong> <a href={`mailto:${participant.email}`}>{participant.email}</a></div>
                                                 <div><strong>Codice fiscale: </strong> {participant.codiceFiscale}</div>
                                             </div>
                                         </div>
@@ -91,7 +92,7 @@ const PaginaDettaglio = () => {
                         ))}
                         <div className="col-12  ">
                             {/* Bottone per tornare alla home */}
-                            <Link className="btn btn-warning text-light" to="/">Torna indietro</Link>
+                            <Link className="btn background-color text-light" to="/">Torna indietro</Link>
                         </div>
                     </div>
                 </div>
