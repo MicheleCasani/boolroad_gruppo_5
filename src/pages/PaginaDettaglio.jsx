@@ -93,9 +93,10 @@ const PaginaDettaglio = () => {
                                 </div>
                             </div>
                         ))}
-                        <div className="col-12  ">
+                        <div className="col-12">
                             {/* Bottone per tornare alla home */}
-                            <Link className="btn background-color text-light" to="/">Torna indietro</Link>
+                            <Link className="btn background-color text-light mx-2" to="/">Torna alla lista viaggi</Link>
+                            <Link className="btn background-color text-light mx-2" to="/form">Pagina Form Viaggi</Link>
                         </div>
                     </div>
                 </div>
